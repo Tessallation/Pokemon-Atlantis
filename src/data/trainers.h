@@ -156,16 +156,16 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sExecHenry1),
     },
 
-    [TRAINER_ED] =
+    [ORM_1] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_EXECUTIVE,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
-        .trainerName = _("ED"),
+        .trainerPic = TRAINER_PIC_ORM,
+        .trainerName = _("Orm"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Ed),
+        .party = TRAINER_PARTY(sParty_Orm_1),
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =

@@ -2607,4 +2607,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+    [ABILITY_ODD_AURA] ={
+        .name = _("Odd Aura"),
+        .description = COMPOUND_STRING("Strengthens 'power' moves."),
+        .aiRating = 6,
+    },
+    
 };

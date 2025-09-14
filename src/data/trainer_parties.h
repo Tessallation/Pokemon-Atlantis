@@ -116,14 +116,30 @@ static const struct TrainerMon sParty_Alberto[] = {
     }
 };
 
-static const struct TrainerMon sParty_Ed[] = {
+static const struct TrainerMon sParty_Orm_1[] = {
     {
-    .lvl = 30,
-    .species = SPECIES_ZANGOOSE,
+    .lvl = 14,
+    .species = SPECIES_SHUCKLE,
     },
     {
-    .lvl = 30,
-    .species = SPECIES_SEVIPER,
+    .lvl = 12,
+    .species = SPECIES_HOPPIP,
+    },
+    {
+    .lvl = 12,
+    .species = SPECIES_CAPSAKID,
+    },
+    {
+    .lvl = 14,
+    .species = SPECIES_SCYTHER,
+    },
+    {
+    .lvl = 14,
+    .species = SPECIES_SIZZLIPEDE,
+    },
+    {
+    .lvl = 18,
+    .species = SPECIES_SKIPLOOM,
     }
 };
 

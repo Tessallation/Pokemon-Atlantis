@@ -16,7 +16,7 @@
 #define APPEL_SILPH_4        10
 #define APPEL_SILPH_5                       11
 #define EXECUTIVE_HENRY                      12
-#define TRAINER_ED                           13
+#define ORM_1                          13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
 #define TRAINER_DECLAN                       15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16

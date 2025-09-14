@@ -481,6 +481,7 @@ struct MoveInfo
     u32 bitingMove:1;
     u32 pulseMove:1;
     u32 soundMove:1;
+    u32 powerMove:1;
     u32 ballisticMove:1;
     u32 powderMove:1;
     u32 danceMove:1;

@@ -40,6 +40,9 @@ text Orm_PreScytherF {
     format("All the natural resources of Atlantia belongs to Silph Co. per, the Colress Treaty- this Sanctuary included. If you're going to get in my way, I will remove you.")
 }
 
+text Orm_Loss1 {
+    format("...")
+}
 
 text Orm_PostScytherF1 {
     format("...You're stronger than I expected. My men and I will leave. I gathered the samples I needed anyways. Don't expect me to be the last person sent here.")
@@ -105,12 +108,19 @@ script Initiate_Battle_Scyther_Sanctuary {
     waitmovement(4)
     lockall
     msgbox(Orm_PreScytherF)
-
-    
-    msgbox("This is where the double battle will go!")
-
-    
-
-
+    special(SavePlayerParty)
+    fadescreen(FADE_TO_BLACK)
+    special(ChooseHalfPartyForBattle)
+    waitstate
+    multi_2_vs_1(ORM_1, Orm_Loss1, PARTNER_TESSA)
+    special(LoadPlayerParty)
+    if(var(VAR_RESULT)==1){
+        call(DefeatedOrm1)
+    }
+    else{
+    fadescreen(FADE_TO_BLACK)
+    special(SetCB2WhiteOut)
+    waitstate
+    }
 }
 

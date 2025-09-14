@@ -24,3 +24,17 @@ static const struct TrainerMon sParty_StevenPartner[] = {
         .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW},
     }
 };
+static const struct TrainerMon sParty_TessaPartner[] = {
+    {
+        .species = SPECIES_SCYTHER,
+        .lvl = 14,
+    },
+    {
+        .species = SPECIES_SCIZOR,
+        .lvl = 14,
+    },
+    {
+        .species = SPECIES_KLEAVOR,
+        .lvl = 14,
+    }
+};
