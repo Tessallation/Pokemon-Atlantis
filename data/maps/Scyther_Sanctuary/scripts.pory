@@ -55,6 +55,12 @@ text Orm_PostScytherF2 {
 
 
 text Tessa_PostScytherF1 {
+    format("Would you take this Scyther to Maya? She lives in the house in the woods with her Mother.")
+}
+text Tessa_PostScytherF2 {
+    format("...")
+}
+text Tessa_PostScytherF3 {
     format("Thanks for the help, kid. If you still want to challenge me, I'll be at my gym.")
 }
  movement WalkOffSceenScyther {
@@ -66,7 +72,6 @@ text Tessa_PostScytherF1 {
     applymovement(4,TalkDown)
     waitmovement(4)
     lockall
-    msgbox(Orm_PreScytherF)
     msgbox(Orm_PostScytherF1)
     msgbox(Tessa_PreScytherF2)
     msgbox(Orm_PostScytherF2)
@@ -81,7 +86,10 @@ text Tessa_PostScytherF1 {
 
     //post combat dialogue
 
+    applymovement(1,NPC_faceplayer)
     msgbox(Tessa_PostScytherF1)
+    msgbox(Tessa_PostScytherF2)
+    msgbox(Tessa_PostScytherF3)
     releaseall
     applymovement(1,WalkOffSceenScyther)
     waitmovement(1)

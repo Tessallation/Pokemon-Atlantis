@@ -22,6 +22,7 @@ static const u8 sBattleAnimBgCnts[] = {REG_OFFSET_BG0CNT, REG_OFFSET_BG1CNT, REG
 
 static const TaskFunc sBattleIntroSlideFuncs[] =
 {
+    //BATTLE_TERRAIN_GRASS]      = BattleIntroSlide1,
     [BATTLE_TERRAIN_GRASS]      = BattleIntroSlide1,
     [BATTLE_TERRAIN_LONG_GRASS] = BattleIntroSlide1,
     [BATTLE_TERRAIN_SAND]       = BattleIntroSlide2,
@@ -234,6 +235,8 @@ static void BattleIntroSlide1(u8 taskId)
     }
 }
 
+
+
 static void BattleIntroSlide2(u8 taskId)
 {
     int i;
@@ -433,6 +436,7 @@ static void BattleIntroSlide3(u8 taskId)
     if (gTasks[taskId].tState != 4)
         SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(gTasks[taskId].data[4], 0));
 }
+
 
 static void BattleIntroSlideLink(u8 taskId)
 {

@@ -77,6 +77,7 @@
 #define MAP_APPEL_NORTH_RIVER     (68 | (0 << 8))
 #define MAP_SCYTHER_SANCTUARY     (69 | (0 << 8))
 #define MAP_AGRIVILLE_PKMN_CENTER (70 | (0 << 8))
+#define MAP_MAYAS_HOUSE           (71 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

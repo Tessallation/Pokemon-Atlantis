@@ -1100,3 +1100,6 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Scyther_Sanctuary/scripts.inc"
 
 	.include "data/maps/AgrivillePkmnCenter/scripts.inc"
+
+
+	.include "data/maps/MayasHouse/scripts.inc"

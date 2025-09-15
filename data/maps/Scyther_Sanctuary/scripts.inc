@@ -20,132 +20,136 @@ NPC_faceup:
 	face_up
 	step_end
 
-# 60 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 66 "data/maps/Scyther_Sanctuary/scripts.pory"
 WalkOffSceenScyther:
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
-# 61 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
 	walk_down
 	step_end
 
 DefeatedOrm1::
-# 65 "data/maps/Scyther_Sanctuary/scripts.pory"
-	releaseall
-# 66 "data/maps/Scyther_Sanctuary/scripts.pory"
-	applymovement 4, TalkDown
-# 67 "data/maps/Scyther_Sanctuary/scripts.pory"
-	waitmovement 4
-# 68 "data/maps/Scyther_Sanctuary/scripts.pory"
-	lockall
-# 69 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Orm_PreScytherF
-# 70 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Orm_PostScytherF1
 # 71 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Tessa_PreScytherF2
-# 72 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Orm_PostScytherF2
-# 75 "data/maps/Scyther_Sanctuary/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 76 "data/maps/Scyther_Sanctuary/scripts.pory"
-	removeobject 5
-# 77 "data/maps/Scyther_Sanctuary/scripts.pory"
-	removeobject 4
-# 78 "data/maps/Scyther_Sanctuary/scripts.pory"
-	setvar VAR_SCYTHER_SANCT_STATE, 1
-# 79 "data/maps/Scyther_Sanctuary/scripts.pory"
-	setflag FLAG_SCYTHER_SANCT_CLEARED
-# 80 "data/maps/Scyther_Sanctuary/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 84 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Tessa_PostScytherF1
-# 85 "data/maps/Scyther_Sanctuary/scripts.pory"
 	releaseall
-# 86 "data/maps/Scyther_Sanctuary/scripts.pory"
-	applymovement 1, WalkOffSceenScyther
-# 87 "data/maps/Scyther_Sanctuary/scripts.pory"
-	waitmovement 1
-# 88 "data/maps/Scyther_Sanctuary/scripts.pory"
-	removeobject 1
-# 89 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 72 "data/maps/Scyther_Sanctuary/scripts.pory"
+	applymovement 4, TalkDown
+# 73 "data/maps/Scyther_Sanctuary/scripts.pory"
+	waitmovement 4
+# 74 "data/maps/Scyther_Sanctuary/scripts.pory"
 	lockall
+# 75 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Orm_PostScytherF1
+# 76 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Tessa_PreScytherF2
+# 77 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Orm_PostScytherF2
+# 80 "data/maps/Scyther_Sanctuary/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 81 "data/maps/Scyther_Sanctuary/scripts.pory"
+	removeobject 5
+# 82 "data/maps/Scyther_Sanctuary/scripts.pory"
+	removeobject 4
+# 83 "data/maps/Scyther_Sanctuary/scripts.pory"
+	setvar VAR_SCYTHER_SANCT_STATE, 1
+# 84 "data/maps/Scyther_Sanctuary/scripts.pory"
+	setflag FLAG_SCYTHER_SANCT_CLEARED
+# 85 "data/maps/Scyther_Sanctuary/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 89 "data/maps/Scyther_Sanctuary/scripts.pory"
+	applymovement 1, NPC_faceplayer
 # 90 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Tessa_PostScytherF1
+# 91 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Tessa_PostScytherF2
+# 92 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Tessa_PostScytherF3
+# 93 "data/maps/Scyther_Sanctuary/scripts.pory"
+	releaseall
+# 94 "data/maps/Scyther_Sanctuary/scripts.pory"
+	applymovement 1, WalkOffSceenScyther
+# 95 "data/maps/Scyther_Sanctuary/scripts.pory"
+	waitmovement 1
+# 96 "data/maps/Scyther_Sanctuary/scripts.pory"
+	removeobject 1
+# 97 "data/maps/Scyther_Sanctuary/scripts.pory"
+	lockall
+# 98 "data/maps/Scyther_Sanctuary/scripts.pory"
 	releaseall
 	return
 
 
 Initiate_Battle_Scyther_Sanctuary::
-# 94 "data/maps/Scyther_Sanctuary/scripts.pory"
-	lockall
-# 95 "data/maps/Scyther_Sanctuary/scripts.pory"
-	releaseall
-# 96 "data/maps/Scyther_Sanctuary/scripts.pory"
-	applymovement 1, NPC_faceplayer
-# 97 "data/maps/Scyther_Sanctuary/scripts.pory"
-	waitmovement 1
-# 98 "data/maps/Scyther_Sanctuary/scripts.pory"
-	lockall
-# 99 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Tessa_PreScytherF1
-# 100 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Tessa_PreScytherF2
-# 101 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Tessa_PreScytherF3
 # 102 "data/maps/Scyther_Sanctuary/scripts.pory"
-	releaseall
+	lockall
 # 103 "data/maps/Scyther_Sanctuary/scripts.pory"
-	applymovement 1, NPC_faceup
-# 104 "data/maps/Scyther_Sanctuary/scripts.pory"
-	waitmovement 1
-# 105 "data/maps/Scyther_Sanctuary/scripts.pory"
-	lockall
-# 106 "data/maps/Scyther_Sanctuary/scripts.pory"
 	releaseall
-# 107 "data/maps/Scyther_Sanctuary/scripts.pory"
-	applymovement 4, TalkDown
-# 108 "data/maps/Scyther_Sanctuary/scripts.pory"
-	waitmovement 4
-# 109 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 104 "data/maps/Scyther_Sanctuary/scripts.pory"
+	applymovement 1, NPC_faceplayer
+# 105 "data/maps/Scyther_Sanctuary/scripts.pory"
+	waitmovement 1
+# 106 "data/maps/Scyther_Sanctuary/scripts.pory"
 	lockall
+# 107 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Tessa_PreScytherF1
+# 108 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Tessa_PreScytherF2
+# 109 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Tessa_PreScytherF3
 # 110 "data/maps/Scyther_Sanctuary/scripts.pory"
-	msgbox Orm_PreScytherF
+	releaseall
 # 111 "data/maps/Scyther_Sanctuary/scripts.pory"
-	special SavePlayerParty
+	applymovement 1, NPC_faceup
 # 112 "data/maps/Scyther_Sanctuary/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	waitmovement 1
 # 113 "data/maps/Scyther_Sanctuary/scripts.pory"
-	special ChooseHalfPartyForBattle
+	lockall
 # 114 "data/maps/Scyther_Sanctuary/scripts.pory"
-	waitstate
+	releaseall
 # 115 "data/maps/Scyther_Sanctuary/scripts.pory"
-	multi_2_vs_1 ORM_1, Orm_Loss1, PARTNER_TESSA
+	applymovement 4, TalkDown
 # 116 "data/maps/Scyther_Sanctuary/scripts.pory"
-	special LoadPlayerParty
+	waitmovement 4
 # 117 "data/maps/Scyther_Sanctuary/scripts.pory"
+	lockall
+# 118 "data/maps/Scyther_Sanctuary/scripts.pory"
+	msgbox Orm_PreScytherF
+# 119 "data/maps/Scyther_Sanctuary/scripts.pory"
+	special SavePlayerParty
+# 120 "data/maps/Scyther_Sanctuary/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 121 "data/maps/Scyther_Sanctuary/scripts.pory"
+	special ChooseHalfPartyForBattle
+# 122 "data/maps/Scyther_Sanctuary/scripts.pory"
+	waitstate
+# 123 "data/maps/Scyther_Sanctuary/scripts.pory"
+	multi_2_vs_1 ORM_1, Orm_Loss1, PARTNER_TESSA
+# 124 "data/maps/Scyther_Sanctuary/scripts.pory"
+	special LoadPlayerParty
+# 125 "data/maps/Scyther_Sanctuary/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Initiate_Battle_Scyther_Sanctuary_1
-# 121 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 129 "data/maps/Scyther_Sanctuary/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 122 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 130 "data/maps/Scyther_Sanctuary/scripts.pory"
 	special SetCB2WhiteOut
-# 123 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 131 "data/maps/Scyther_Sanctuary/scripts.pory"
 	waitstate
 	return
 
 Initiate_Battle_Scyther_Sanctuary_1:
-# 118 "data/maps/Scyther_Sanctuary/scripts.pory"
+# 126 "data/maps/Scyther_Sanctuary/scripts.pory"
 	call DefeatedOrm1
 	return
 
@@ -206,5 +210,15 @@ Orm_PostScytherF2::
 
 Tessa_PostScytherF1::
 # 57 "data/maps/Scyther_Sanctuary/scripts.pory"
+	.string "Would you take this Scyther to Maya?\n"
+	.string "She lives in the house in the woods with\l"
+	.string "her Mother.$"
+
+Tessa_PostScytherF2::
+# 60 "data/maps/Scyther_Sanctuary/scripts.pory"
+	.string "...$"
+
+Tessa_PostScytherF3::
+# 63 "data/maps/Scyther_Sanctuary/scripts.pory"
 	.string "Thanks for the help, kid. If you still\n"
 	.string "want to challenge me, I'll be at my gym.$"
